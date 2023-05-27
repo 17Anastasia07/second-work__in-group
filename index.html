@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Bootstrap/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="A_background">
+        <header class="header"> 
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p class="modal-header__topic">Увійти</p>
+                  <div class="toast-header" data-bs-theme="dark">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control email_inside" id="floatingInput" placeholder="name@example.com">
+                    <label class="form__text" for="floatingInput">Адреса електронної пошти</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="email_inside form-control" id="floatingPassword" placeholder="Password">
+                    <label class="form__text" for="floatingPassword">Пароль</label>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn inside btn-primary">Увійти</button>
+                  </div>
+                  <div class="form-check">
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Запам'ятати мене
+                      </label>
+                      <div class="form-near__check"><p>Потрібна допомога?</p></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="all_reister">
+                  <div class="before__reister"><p>Уперше на Netflix?</p></div>
+                  <div class="reister"><p>Зареєструватися.</p></div>
+                </div>
+                <div class="under__reister"><p>Щоб переконатися, що ви не бот, сторінка захищена системою Google reCAPTCHA. </p></div>
+
+                <a class="btn more btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1"  aria-expanded="false" aria-controls="multiCollapseExample1"><span>Докладніше.</span></a>
+  <div class="collapse multi-collapse" id="multiCollapseExample1">
+  <div class="card under__reister card-body">Інформація, яку збирає система Google reCAPTCHA, регулюється <a href="https://policies.google.com/privacy"> Політикою конфіденційності</a> й <a href="https://policies.google.com/privacy">Умовами використання</a> Google. Ці дані використовуються, щоб надавати, підтримувати й покращувати сервіс reCAPTCHA, а також у цілях загальної безпеки (Google не застосовуватиме їх для персоналізації реклами).</div>
+  </div>
+                <div class="under__reister"><p></p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="header_logo">
+                <img class="logo" src="./img/logo.png" width="148px" alt="" />
+            </div>
+            <div class="header_burger">
+                <span_2 class="burger_line">
+                  <nav class="navbar  fixed-top"> 
+                    <div class="container-fluid">
+                      <div class="header_logo_2">
+                        <img class="logo_2" src="./img/logo.png" width="148px" alt="" />
+                    </div>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#"><div class="header__menu-items"><div class="dropdown">
+                                <img src="./img/lang.png" width="20px" alt="">
+                                <select class=" btn secondary dropdown-toggle" name="select">
+                                  
+                                  <option value="">Українська</option>
+                                  <option value="">Англійська</option>
+                                  <option value="">Французька</option>
+                                
+                              </select>
+                              </div></div></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><button type="button" class="btn come_inside btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Увійти
+                              </button>
+                              
+                            </a>
+                            </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </span_2>
+            </div>
+        <ul class="header__menu">
+            <li class="header__menu-items">
+                <div class="dropdown">
+                    <img src="./img/lang.png" width="20px" alt="">
+                    <select class=" btn secondary dropdown-toggle" name="select">
+                      
+                      <option value="">Українська</option>
+                      <option value="">Англійська</option>
+                      <option value="">Французька</option>
+                    
+                  </select>
+                  </div>
+            </li>
+            <li class="header__menu-items">
+  <!-- Button trigger modal -->
+<button type="button" class="btn come_inside btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Увійти
+</button>
+
+<!-- Modal -->
+
+
+            </li>
+        </ul>
+    </header>
+
+    <div class="A__info-box">
+        <p class="info__topic">Фільми, серіали й інший контент без обмежень</p>
+        <p class="info__text-1">Дивіться будь-де. Скасувати підписку можна будь-коли.</p>
+        <p class="info__text-2">Готові до перегляду? Введіть адресу електронної пошти, щоб оформити або поновити підписку.</p>
+    </div>
+    <div class="A__button-email">
+      <div class="form-floating mb-3">
+        <input type="email" class=" email_ouside form-control" id="floatingInput" placeholder="name@example.com">
+        <label class="email__text" for="floatingInput">Адреса електронної пошти</label>
+      </div>
+        <div class="button">
+        <button role="button" class="button__email" type="submit">Почати
+            <img src="./img/pngwing.com (7).png" width="25px" alt="">
+        </button>
+      </div>
+    </div>
+
+    </div>
+
+
+</body>
+<script src="./Bootstrap/bootstrap-5.3.0-alpha3-dist/js/bootstrap.js"></script>
+</html>
